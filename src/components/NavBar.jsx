@@ -28,7 +28,7 @@ const NavBar = () => {
     },
   ]
   return (
-    <div className="flex bg-indigo-600 px-4 justify-between items-center w-full h-20 text-white fixed">
+    <div className="flex bg-indigo-700 px-4 justify-between items-center w-full h-20 text-white fixed">
       <div>
         <h1 className="text-5xl font-typograph ml-2 capitalize">indra</h1>
       </div>
