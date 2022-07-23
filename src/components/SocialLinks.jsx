@@ -1,7 +1,6 @@
 import React from 'react';
-import { FaMailBulk, FaVoicemail, FaGithub, FaLinkedin, FaInstagramSquare, FaTiktok } from 'react-icons/fa';
-import { HiOutlineMail } from 'react-icons/fa';
-import { BsFillPersonLinesFill } from 'react-icons/fa';
+import {Helmet} from 'react-helmet';
+import { FaMailBulk, FaGithub, FaLinkedin, FaFilePdf } from 'react-icons/fa';
 
 const SocialLinks = () => {
 
@@ -13,8 +12,8 @@ const SocialLinks = () => {
         LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: 'https:// linkedin.comm/inggain272',
-      style: 'rounded-tr-md'
+      href: 'https://www.linkedin.com/in/inggaindra272/',
+      style: 'rounded-tr-md hover:to-blue-500'
     },
     {
       id: 2,
@@ -29,7 +28,7 @@ const SocialLinks = () => {
       id: 3,
       child: (
         <>
-        Mail <FaVoicemail size={30} />
+        Mail <FaMailBulk size={30} />
         </>
       ),
       href: 'mailto:m.indraali272@gmail.com',
@@ -38,7 +37,7 @@ const SocialLinks = () => {
       id: 4,
       child: (
         <>
-        Resume <FaMailBulk size={30} />
+        Resume <FaFilePdf size={30} />
         </>
       ),
       href: '/src/assets/files/resume.pdf',
@@ -49,6 +48,12 @@ const SocialLinks = () => {
 
   return (
     <div className="flex flex-col top-[35%] left-0 fixed">
+    <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Social Links</title>
+      </Helmet>
+    </div>
         <ul>
 
         {links.map(({id, child, style, href, download}) => (
